@@ -1,0 +1,75 @@
+Junit_suite
+firstProjectCode.Junit_suite
+initializationError(firstProjectCode.Junit_suite)
+org.junit.runners.model.InvalidTestClassError: Invalid test class 'firstProjectCode.Junit_suite':
+  1. Method setUpBeforeClass() should be static
+  2. Method tearDownAfterClass() should be static
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:102)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:84)
+	at org.junit.runners.JUnit4.<init>(JUnit4.java:23)
+	at org.junit.internal.builders.JUnit4Builder.runnerForClass(JUnit4Builder.java:10)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:513)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+//*[@id="_NU3fZeu2BJza7_UPj4GfsAc_8"]/div/span/svg
+
+//*[@id="elPddd"]
+
+_flTfZdusE8-yi-gP5_OJgAo_8
+//*[@id="_-FbfZZTaO5fqi-gPraiS-AY_8"]/div/span/svg
+//*[@id="_-FbfZZTaO5fqi-gPraiS-AY_8"]/div
+//*[@id="_1VffZYezMMaAi-gP3fag0Ag_8"]/div
+/html/body/div[3]/div[2]/div/div[1]/div/div
+#_1VffZYezMMaAi-gP3fag0Ag_8 > div
+//*[@id="_1VffZYezMMaAi-gP3fag0Ag_8"]/div
+//*[@id="_z1jfZfXtGsyN9u8Piou6gAM_8"]/div
+
+//*[@id="elPddd"]/div[6]/div[2]/a
+//*[@id="elPddd"]/div[4]/a
+
+/html/body/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[1]/div
+//*[@id="lb"]/div/div[2]/span/div/g-menu/g-menu-item[2]/div		for english
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+                <Properties>
+                               <Property name="basePath">./logs</Property>
+                </Properties>
+                <Appenders>
+                               <RollingFile name="File" fileName="${basePath}/app.log" filePattern="${basePath}/app-%d{yyyy-MM-dd}.log">
+                                               <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{2} -%msg%n"/>
+                                               <Policies>
+                                                               <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                                                               <SizeBasedTriggeringPolicy size="100 KB"/>
+                                               </Policies>
+                               </RollingFile>
+                               <Console name="Console">
+                                               <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{1} -%msg%n"/>
+                               </Console>
+                </Appenders>
+                <Loggers>
+        <Root level="trace">
+                                               <AppenderRef ref="File"/>
+                               </Root>
+                               <Logger name="letskodeit" level="info" additivity="false">
+                                               <AppenderRef ref="File"/>
+                               </Logger>
+                               <Logger name="demo" level="debug" additivity="false">
+                                               <AppenderRef ref="File"/>
+                               </Logger>
+                </Loggers>
+</Configuration>
+
